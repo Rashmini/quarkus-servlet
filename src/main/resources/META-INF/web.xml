@@ -1,0 +1,23 @@
+<web-app>
+
+<servlet>
+	<servlet-name>myServlet</servlet-name>
+	<servlet-class>org.acme.servlet.DemoServ</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>myServlet</servlet-name>
+	<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+
+<filter>
+    <filter-name>myFilter</filter-name>
+    <filter-class>org.acme.servlet.SimpleServletFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>myFilter</filter-name>
+    <url-pattern>/welcome</url-pattern>
+</filter-mapping>
+
+</web-app>

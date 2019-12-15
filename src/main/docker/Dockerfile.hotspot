@@ -1,0 +1,9 @@
+FROM adoptopenjdk/maven-openjdk8
+RUN mkdir /app
+COPY src /app/src
+COPY pom.xml /app
+WORKDIR /app
+RUN mvn clean package
+WORKDIR /app/target/
+EXPOSE 8080
+CMD ["java", "-jar", "quarkus-servlet-1.0-SNAPSHOT-runner.jar"]
