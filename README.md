@@ -1,4 +1,4 @@
-# quarkus-servlet
+# Quarkus-servlet-application
 This is a web.xml based simple servlet application created using Quarkus.
 Use "mvn clean package" command to generate the runner jar.
 
